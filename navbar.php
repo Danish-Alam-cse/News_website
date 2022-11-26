@@ -20,9 +20,9 @@
         </form>
         <ul class="navbar-nav">
             <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="Login.php" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="insert_news.php" class="nav-link">Insert News</a></li>
+            <li class="nav-item"><a href="insert_category.php" class="nav-link">Insert Category</a></li>
+            <li class="nav-item"><a href="insert_user.php" class="nav-link">Insert User</a></li>
             <li class="nav-item"><a href="signup.php" class="nav-link">Signup</a></li>
         </ul>
     </div>
