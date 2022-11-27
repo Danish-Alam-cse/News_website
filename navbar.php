@@ -15,8 +15,8 @@
     <div class="container">
         <a href="index.html" class="navbar-brand">JND News</a>
         <form action="" class="d-flex">
-            <input type="search" placeholder="Search items here.." size="70" class="form-control">
-            <input type="submit" value="Search" class="btn btn-success btn-sm ms-1">
+            <input type="search" placeholder="Search items here.." size="70" class="form-control" name="search">
+            <input type="submit" value="Search" class="btn btn-success btn-sm ms-1" name="find">
         </form>
         <ul class="navbar-nav">
             <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>

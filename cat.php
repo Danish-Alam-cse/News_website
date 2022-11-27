@@ -18,18 +18,14 @@
         
             <div class="row">
             <?php 
-                if(isset($_GET['find'])){
-                    $search = $_GET['search'];
+                if(isset($_GET['cat'])):
+                    $cat = $_GET['cat'];
+
                     $query = mysqli_query($con,"select * from post INNER JOIN category ON post.category = category.cat_id
                     JOIN user
-                   ON post.author = user.user_id where content LIKE '%$search%' OR user.name = '$search' ");
-                }
-                else{
-                $query = mysqli_query($con,"select * from post INNER JOIN category ON post.category = category.cat_id
-                 JOIN user
-                ON post.author = user.user_id;");
-                }
-                while($row = mysqli_fetch_array($query)){?>
+                   ON post.author = user.user_id WHERE category = '$cat'");
+                    $count = mysqli_num_rows($query);                         
+                     while($row = mysqli_fetch_array($query)){?>
                 <div class="col-lg-4 mb-2">
                     <div class="card shadow p-3">
                         <p class="card-title"><?= $row['content'];?></p>
@@ -37,7 +33,8 @@
                         <span class="badge bg-info"><?= $row['title'];?></span></h4>
                     </div>
                 </div>
-                <?php }?>
+                <?php }
+                endif;?>
             </div>
             
         </div>
